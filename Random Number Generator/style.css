@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #a29bfe;
+}
+
+#git-hub {
+    padding: 4px;
+    position:  absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.git-id {
+    display: inline-flex;
+    font-size: 24px;
+    position: relative;
+    bottom: 1px;  
+}
+
+a {
+    text-decoration: none;
+    color: #a29bfe;
+}
+
+#git-hub {
+    padding: 4px;
+    position:  absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.git-id {
+    display: inline-flex;
+    font-size: 24px;
+    position: relative;
+    bottom: 1px;  
+}
+
+.fa-brands fa-github {
+    width: 2px; 
+    height: 22px;
+    display: inline-block; 
+  }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+     margin: 0; }
+
+body {
+    background-color: #121212;
+    color:#a29bfe;
+    font-family: "Outfit", sans-serif;
+    overflow-y: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0 30px 0;
+    font-size: 70px;
+}
+
+.input_container {
+    font-size: 30px;
+    text-align: center;
+}
+
+#range_container {
+    margin : 80px 0 20px 0;
+}
+
+#inputrange_container {
+    margin-top: 25px;
+}
+
+#min1 {
+    margin-right: 100px;
+}
+
+#max1 {
+    margin-left: 100px;
+}
+
+input {
+    background-color: rgba(128, 128, 128, 0.795);
+    font-size: 20px;
+    color: #121212;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid;
+    outline: none;                  
+    cursor: text;    
+}
+
+#amt_input {
+   text-align: center;
+   margin-top: 25px;
+}
+
+#button_container {
+    text-align: center;
+}
+
+button {
+    color: 	#121212;
+    font-size: 16px;
+    background-color: #7f78d2;
+    padding: 8px 20px;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #7f78d2dd;
+}
+
+button:active {
+    background-color: #7f78d295;
+}
+
+#result_container {
+    text-align: center;
+    font-size: 25px;
+}
+
+#unique_checkbox {
+    font-size: 20px;
+    cursor: context-menu;
+}
+
