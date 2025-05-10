@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f4f8;
+    color:#1f2937;
+    font-family : 'Yrsa';
+}
+
+a {
+    text-decoration: none;
+    color: #1f2937;
+}
+
+#git-hub {
+    padding: 4px;
+    position:  absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.git-id {
+    display: inline-flex;
+    font-size: 25px;
+    position: relative;
+    bottom: 1px;  
+}
+
+.fa-brands fa-github {
+    display: inline-block; 
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+     margin: 0; }
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    margin: 50px 0 130px 0;
+   
+}
+
+.input_container {
+    font-size: 40px;
+}
+
+.inner_container {
+   margin: 50px 0 50px 0; 
+}
+
+#range_container {
+    text-align: center; 
+}
+
+#min_range {
+    margin-right: 100px;
+}
+
+#max_range {
+    margin-left: 100px;
+}
+
+input {
+    background-color: rgba(128, 128, 128, 0.795);
+    font-size: 20px;
+    color: #1f2937;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid;
+    outline: none;                  
+    cursor: text;    
+}
+
+button {
+    color: #f0f4f8;
+    font-size: 20px;
+    background-color: #1f2937;
+    padding: 8px 30px;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #1f2937e8;
+}
+
+button:active {
+    background-color: #1f29379a;
+}
+
+
+#guess_container {
+   display: none;
+   text-align: center;
+}
+
+#redo_button {
+    font-size: 10px; 
+}
+
+label {
+    color :#1f2937;
+}
+
+.slide-up {
+    animation: slideUp 0.5s ease-out forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
