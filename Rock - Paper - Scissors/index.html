@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock - Paper - Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/de2be28836.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="git-hub">
+     <a href="https://github.com/ethancancode" target = "_main">
+       <i class="fa-brands fa-github"></i>
+       <div class="git-id">ethancancode</div>
+      </a>
+   </div>   
+
+   <h1>Rock - Paper - Scissors </h1>
+
+   <div id="button_container">
+     <button id="rock" onclick = "playgame('Rock')">✊</button>
+     <button id="paper" onclick = "playgame('Paper')">✋</button>
+     <button id="scissors" onclick = "playgame('Scissors')">✌</button>
+   </div> 
+
+   <div id="result_container">
+     <label id="player_choice">Player chose:</label> <br>
+     <label id="comp_choice">Computer chose: </label> <br>
+     <label id="victory_message"></label>
+   </div>
+
+   <div id="score_container">
+    <label id="player_score">Player's score: </label> <label id="playerscore_num">0 </label> <br>
+    <label id="comp_score">Computer's score: </label> <label id="compscore_num">0 </label>
+   </div>
+
+
+<script src = "script.js"></script>
+</body>
+</html>

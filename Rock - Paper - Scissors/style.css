@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #808080a4;
+    color: #000000b8;
+    font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+a {
+    text-decoration: none;
+    color: #000000b8;
+}
+
+#git-hub {
+    padding: 4px;
+    position:  absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.git-id {
+    display: inline-flex;
+    font-size: 25px;
+    position: relative;
+    bottom: 1px;  
+}
+
+.fa-brands fa-github {
+    display: inline-block;  
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 50px 0 100px 0;
+    font-weight: bold;
+}
+
+#button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+button {
+    font-size: 40px;
+    margin: 20px;
+    padding: 20px 25px;
+    background-color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button:hover {
+    background-color: #f5f5f599;
+}
+
+#result_container , #score_container {
+    text-align: center;
+    font-size: 25px;
+}
+
+#victory_message {
+    font-size: 40px;    
+    margin: 25px 0 40px 0;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+}
+
+.green_text, #playerscore_num {
+    color: #0d820d;
+}
+
+.red_text, #compscore_num {
+    color: #ff2828
+}
+
