@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Saira:ital,wght@0,100..900;1,100..900&family=Share+Tech+Mono&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de2be28836.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="git-hub">
+     <a href="https://github.com/ethancancode" target = "_main">
+       <i class="fa-brands fa-github"></i>
+       <div id="git-id">ethancancode</div>
+      </a>
+   </div> 
+
+   <h1>Calculator</h1>
+
+   <div id="calculator_container">
+
+     <div id="background_container">
+        <input readonly id="text_container">
+     </div>
+
+     <div id="buttons_container">
+      
+       <div id="left_container">
+        <button class = "white_button" onclick = "squareroot()">√x</button>
+        <button class = "white_button" onclick = "togglesign()">+/-</button>
+       </div>
+
+       <div id="mid_container">
+        <button class = "grey_button" onclick="displaynumber('7')">7</button>
+        <button class = "grey_button" onclick="displaynumber('5')">4</button>
+        <button class = "grey_button" onclick="displaynumber('1')">1</button>
+        <button class = "grey_button" onclick="displaynumber('0')">0</button>
+        <button class = "grey_button" onclick="displaynumber('8')">8</button>
+        <button class = "grey_button" onclick="displaynumber('5')">5</button>
+        <button class = "grey_button" onclick="displaynumber('2')">2</button>
+        <button class = "grey_button" onclick="displaynumber('00')">00</button>
+        <button class = "grey_button" onclick="displaynumber('9')">9</button>
+        <button class = "grey_button" onclick="displaynumber('6')">6</button>
+        <button class = "grey_button" onclick="displaynumber('3')">3</button>
+        <button class = "grey_button" onclick="displaynumber('.')">.</button>
+       </div>
+
+       <div class="right_container" id="right_container_a">
+        <button class ="black_button" onclick="displaynumber(' X ')">X</button>
+        <button class ="black_button" id="addition_button" onclick="displaynumber(' + ')" >+</button>
+       </div> 
+
+       <div class="right_container">  
+        <button class ="black_button" onclick="displaynumber(' % ')">%</button>
+        <button class ="black_button" onclick="displaynumber(' ÷ ')">÷</button>
+        <button class ="black_button" onclick="displaynumber(' - ')">-</button>
+        <button class ="black_button" onclick="calculate()">=</button>
+       </div>
+       <button id="clear_button" onclick="clearlog()">C</button>
+
+     </div> 
+   </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>     
