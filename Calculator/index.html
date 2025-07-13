@@ -21,50 +21,38 @@
    <h1>Calculator</h1>
 
    <div id="calculator_container">
+    <div id="display_container">0</div>
+    <div id="buttons_container">
+      <button class="orange_text" onclick="clearDisplay()">C</button>
+      <button class="orange_text" onclick="backspace()">⌫</button>
+      <button class="orange_text" onclick="append('%')">%</button>
+      <button class="orange_text" onclick="append('/')">÷</button>
 
-     <div id="background_container">
-        <input readonly id="text_container">
-     </div>
+      <button onclick="append('7')">7</button>
+      <button onclick="append('8')">8</button>
+      <button onclick="append('9')">9</button>
+      <button class="orange_text" onclick="append('x')">×</button>
 
-     <div id="buttons_container">
-      
-       <div id="left_container">
-        <button class = "white_button" onclick = "squareroot()">√x</button>
-        <button class = "white_button" onclick = "togglesign()">+/-</button>
-       </div>
+      <button onclick="append('4')">4</button>
+      <button onclick="append('5')">5</button>
+      <button onclick="append('6')">6</button>
+      <button class="orange_text" onclick="append('-')">−</button>
 
-       <div id="mid_container">
-        <button class = "grey_button" onclick="displaynumber('7')">7</button>
-        <button class = "grey_button" onclick="displaynumber('5')">4</button>
-        <button class = "grey_button" onclick="displaynumber('1')">1</button>
-        <button class = "grey_button" onclick="displaynumber('0')">0</button>
-        <button class = "grey_button" onclick="displaynumber('8')">8</button>
-        <button class = "grey_button" onclick="displaynumber('5')">5</button>
-        <button class = "grey_button" onclick="displaynumber('2')">2</button>
-        <button class = "grey_button" onclick="displaynumber('00')">00</button>
-        <button class = "grey_button" onclick="displaynumber('9')">9</button>
-        <button class = "grey_button" onclick="displaynumber('6')">6</button>
-        <button class = "grey_button" onclick="displaynumber('3')">3</button>
-        <button class = "grey_button" onclick="displaynumber('.')">.</button>
-       </div>
+      <button onclick="append('1')">1</button>
+      <button onclick="append('2')">2</button>
+      <button onclick="append('3')">3</button>
+      <button class="orange_text" onclick="append('+')">+</button>
 
-       <div class="right_container" id="right_container_a">
-        <button class ="black_button" onclick="displaynumber(' X ')">X</button>
-        <button class ="black_button" id="addition_button" onclick="displaynumber(' + ')" >+</button>
-       </div> 
-
-       <div class="right_container">  
-        <button class ="black_button" onclick="displaynumber(' % ')">%</button>
-        <button class ="black_button" onclick="displaynumber(' ÷ ')">÷</button>
-        <button class ="black_button" onclick="displaynumber(' - ')">-</button>
-        <button class ="black_button" onclick="calculate()">=</button>
-       </div>
-       <button id="clear_button" onclick="clearlog()">C</button>
-
-     </div> 
+      <button id="zero_button" onclick="append('0')">0</button>
+      <button onclick="append('.')">.</button>
+      <button id="equal_sign" onclick="calculate()">=</button>
+    </div>
+  </div>
+   <div id="all_digits_container">
+    <button id="display_number" onclick="displayExtraDigits()">Display All Digits</button> 
+    <div id="result_container"></div>
    </div>
-
-
+ 
 <script src="script.js"></script>
 </body>
 </html>     
