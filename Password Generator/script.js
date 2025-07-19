@@ -70,6 +70,7 @@ function generatepassword () {
     currentpassword = shufflePassword(password);
     
     document.getElementById("generated_password").innerHTML = `Generated password is: <br> ${currentpassword.join("")}`;
+    document.getElementById("copy_button").style.display = "block"; 
 }
 
 function copytext () {
