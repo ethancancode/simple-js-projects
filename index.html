@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple JS Projects</title>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial;
+      background: #f0f0f0;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    #git-hub a {
+      text-decoration: none;
+      color: #333;
+    }
+    
+    #git-hub {
+      padding: 4px;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    
+    #git-id {
+      display: inline-flex;
+      font-size: 17px;
+      position: relative;
+      bottom: 1px;  
+    }
+    
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    
+    #grid_container {
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+    }
+    
+    .project {
+      height: 400px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .project p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 15px;
+      font-family: 'Segoe UI';
+    }
+    
+    .project.light p {
+      color: #333333;
+    }
+    
+    .project.dark p {
+      color: #ffffffcc;
+    }
+    
+    .project:hover {
+      transform: scale(1.05);
+    }
+    
+    .project a {
+      position: absolute;
+      text-decoration: none;
+      color: red;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+    
+    .project img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      z-index: 1;
+    }
+    
+    .project:hover img {
+      opacity: 1;
+    }
+    
+    #Calculator {
+      background-color: whitesmoke;
+    }
+    
+    #Digital_Clock {
+      background-color: rgb(110, 240, 240);
+    }
+    
+    #Number_Guesser {
+      background-color: #f0f4f8;
+    }
+    
+    #Password_Generator {
+      background-color: #1e1e2f;
+    }
+    
+    #Random_Number_Generator {
+      background-color: #121212;
+    }
+    
+    #Rock_Paper_Scissors {
+      background-color: #808080a4;
+    }
+    
+    #Stopwatch {
+      background-color: #f2f2f2;
+    }
+    
+    #Temperature_Converter {
+      background-color: #f0f8ff;
+    }
+    
+    #To_Do_List {
+      background-color: #f0f0f0;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/de2be28836.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="git-hub">
+    <a href="https://github.com/ethancancode" target = "_main">
+      <i class="fa-brands fa-github"></i>
+      <div id="git-id">ethancancode</div>
+    </a>
+  </div> 
+  
+  <h1>Simple JavaScript Projects</h1>
+  
+  <div id="grid_container">
+    
+    <div class="project light" id="Calculator">
+      <p>Calculator</p>
+      <img src="Calculator/preview.PNG" alt="Calculator Preview">
+      <a href="Calculator/index.html" target="_blank"></a>
+    </div>
+    
+    <div class="project light" id="Digital_Clock">
+      <p>Digital Clock</p>
+      <img src="Digital Clock/preview.PNG" alt="Digital Clock Preview">
+      <a href="Digital Clock/index.html" target="_blank"></a>
+    </div>
+    
+    <div class="project light" id="Number_Guesser">
+      <p>Number Guesser</p>
+      <img src="Number Guesser/preview.PNG" alt="Number Guesser Preview">
+      <a href="Number Guesser/index.html" target="_blank"></a>
+    </div>
+    
+    <div class="project dark" id="Password_Generator">
+      <p>Password Generator</p>
+      <img src="Password Generator/preview.PNG" alt="Password Generator Preview">
+      <a href="Password Generator/index.html" target="_blank"></a>
+    </div>
+    
+    <div class="project dark" id="Random_Number_Generator">
+      <p>Random Number Generator</p>
+      <img src="Random Number Generator/preview.PNG" alt="Random Number Generator Preview">
+      <a href="Random Number Generator/index.html" target="_blank"></a>
+    </div>
+    
+    <div class="project dark" id="Rock_Paper_Scissors">
+      <p>Rock - Paper - Scissors</p>
+      <img src="Rock - Paper - Scissors/preview.PNG" alt="Rock-Paper-Scissors Preview">
+      <a href="Rock - Paper - Scissors/index.html" target="_blank"></a>
+    </div>
+    
+    <div class="project light" id="Stopwatch">
+      <p>Stopwatch</p>
+      <img src="Stopwatch/preview.PNG" alt="Stopwatch Preview">
+      <a href="Stopwatch/index.html" target="_blank"></a>
+    </div>
+    
+    <div class="project light" id="Temperature_Converter">
+      <p>Temperature Converter</p>
+      <img src="Temperature Converter/preview.PNG" alt="Temperature Converter Preview">
+      <a href="Temperature Converter/index.html" target="_blank"></a>
+    </div>
+    
+    <div class="project light" id="To_Do_List">
+      <p>To-Do List</p>
+      <img src="To-Do List/preview.PNG" alt="To-Do List Preview">
+      <a href="To-Do List/index.html" target="_blank"></a>
+    </div>
+    
+  </div>
+  
+</body>
+</html>
