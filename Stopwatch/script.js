@@ -26,10 +26,10 @@ function update () {
 function lap() {
     const lapInterval = elapsedTime - lastlaptime;
     lastlaptime = elapsedTime;
-
+    
     if(isRunning) {
-     position++;
-     laptime.innerHTML += `<div>${position}: ${formatTime(elapsedTime)} ->  +${formatTime(lapInterval)}</div>`;
+        position++;
+        laptime.innerHTML += `<div>${position}: ${formatTime(elapsedTime)} ->  +${formatTime(lapInterval)}</div>`;
     }
 }
 
@@ -38,12 +38,12 @@ function formatTime(ms) {
     let mins = Math.floor(ms / (1000 * 60) % 60 );
     let secs = Math.floor(ms / (1000) % 60 );
     let milisecs = Math.floor(ms % 1000 / 10);
-
+    
     hours = String(hours).padStart(2, "0");
     mins = String(mins).padStart(2, "0");
     secs = String(secs).padStart(2, "0");
     milisecs = String(milisecs).padStart(2, "0");
-
+    
     return `${hours}:${mins}:${secs}:${milisecs}`;
 }
 
@@ -52,7 +52,7 @@ function stop() {
         clearInterval(timer);
         elapsedTime = Date.now() - startingTime;
         isRunning = false;
-
+        
     }
 }
 

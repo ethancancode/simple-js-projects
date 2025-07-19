@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const container = document.createElement('div');
         container.className = 'status-controls';
         container.style.display = 'flex';
-         
+        
         const radioGroupName = `status_${Date.now()}`;    
         const statuses = ['Inactive', 'Completed', 'Ongoing'];  
         statuses.forEach(status => {
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         taskList.innerHTML = '';
         tasks.forEach((task, index) => createTaskElement(task, index));
     };
-      
+    
     renderTasks();
     
     function saveTasks() {

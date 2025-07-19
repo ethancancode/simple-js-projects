@@ -28,72 +28,68 @@ a {
     bottom: 1px;  
 }
 
-.fa-brands fa-github {
-    display: inline-block; 
-}
-
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
-     margin: 0; }
-
-h1 {
-    text-align: center;
-    font-size: 70px;
-    margin: 50px 0 100px 0; 
-}
-
-#checkbox_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    margin-bottom: 50px;
-    font-size:  20px;    
-}
-
-#length_container {
-   font-size: 30px;
-   text-align: center;
-   margin-bottom: 50px;
-}
-
-#generate_container {
-    text-align: center;
-    font-size: 30px;
-    position: relative;
-}
-
-#copy_button {
-    position: absolute;
-    font-size: 10px;
-    right: 100px;
-    top: 15px;
-    display: none;
-}
-
-input {
-    background-color: #e0e0e0;
-    font-size: 20px;
-    color: #1e1e2f;
-    padding: 5px;
-    border-radius: 10px;
-    border: 1px solid;
-    outline: none;                     
-}
-
-button {
-    color: #1e1e2f;
-    font-size: 16px;
-    background-color: #e0e0e0;
-    padding: 8px 20px;
-    border-radius: 3px;   
-}
-
-button:hover {
-    background-color: #e0e0e0ed;
-}
-
-button:active {
-    background-color: #e0e0e0cd;;
-}
+    margin: 0; }
+    
+    h1 {
+        text-align: center;
+        font-size: 70px;
+        margin: 50px 0 100px 0; 
+    }
+    
+    #checkbox_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 50px;
+        font-size:  20px;    
+    }
+    
+    #length_container {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    #generate_container {
+        text-align: center;
+        font-size: 30px;
+        position: relative;
+    }
+    
+    #copy_button {
+        position: absolute;
+        font-size: 10px;
+        right: 100px;
+        top: 15px;
+        display: none;
+    }
+    
+    input {
+        background-color: #e0e0e0;
+        font-size: 20px;
+        color: #1e1e2f;
+        padding: 5px;
+        border-radius: 10px;
+        border: 1px solid;
+        outline: none;                     
+    }
+    
+    button {
+        color: #1e1e2f;
+        font-size: 16px;
+        background-color: #e0e0e0;
+        padding: 8px 20px;
+        border-radius: 3px;   
+    }
+    
+    button:hover {
+        background-color: #e0e0e0ed;
+    }
+    
+    button:active {
+        background-color: #e0e0e0cd;;
+    }

@@ -1,41 +1,41 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body { 
-    background-color: whitesmoke;
-    color: black;
-    font-family : monospace;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  background-color: whitesmoke;
+  color: black;
+  font-family : monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 a {
-    text-decoration: none;
-    color: #000000bc;
+  text-decoration: none;
+  color: #000000bc;
 }
 
 #git-hub {
-    padding: 4px;
-    position:  absolute;
-    right: 0px;
-    top: 0px;
+  padding: 4px;
+  position:  absolute;
+  right: 0px;
+  top: 0px;
 }
 
 #git-id {
-    display: inline-flex;
-    font-size: 17px;
-    position: relative;
-    bottom: 1px;  
+  display: inline-flex;
+  font-size: 17px;
+  position: relative;
+  bottom: 1px;  
 }
 
 h1 {
-    font-size: 70px;
-    margin: 50px 0 30px 0; 
-    font-size: bold;
+  font-size: 70px;
+  margin: 50px 0 30px 0; 
+  font-size: bold;
 }
 
 #calculator_container {
@@ -75,7 +75,7 @@ button {
 }
 
 #zero_button {
-    grid-column: 2;
+  grid-column: 2;
 }
 
 button:hover {
@@ -93,25 +93,25 @@ button:hover {
 }
 
 #display_number {
-    border-radius: 0;
-    padding: 5px 10px;
-    width: fit-content;
-    font-size: 15px;
+  border-radius: 0;
+  padding: 5px 10px;
+  width: fit-content;
+  font-size: 15px;
 }
 
 #all_digits_container {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    position:absolute;
-    right: 400px;
-    top: 250px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position:absolute;
+  right: 400px;
+  top: 250px;
 }
 
 #result_container {
-    display: none;
-    background-color: #1c1c1c;
-    color: white;
-    padding: 10px;
+  display: none;
+  background-color: #1c1c1c;
+  color: white;
+  padding: 10px;
 }

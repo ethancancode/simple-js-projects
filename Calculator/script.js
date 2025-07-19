@@ -7,24 +7,24 @@ let result = '';
 
 function append(value) {
   if (!working) return;
-
+  
   if (value === '.') { //prevent double decimal
-  const currentNumber = display.innerText.split(/[\+\-\x\/%]/).pop();
-   if (currentNumber.includes('.')) return;
+    const currentNumber = display.innerText.split(/[\+\-\x\/%]/).pop();
+    if (currentNumber.includes('.')) return;
   }  
-
+  
   if (result) { //after an operation of large number, helps to use the complete sum instead of using the display value
-      if(!checkSymbol(value)) return; //after result only allow symbols to concatenate
-  storedDigits = result;
-  result = '';
-  display.innerText = '';
+    if(!checkSymbol(value)) return; //after result only allow symbols to concatenate
+    storedDigits = result;
+    result = '';
+    display.innerText = '';
   }
-
+  
   extradigits.style.display = "none";
   resultcontainer.style.display = "none";
-
+  
   const lastChar = display.innerText.slice(-1);
-
+  
   if (display.innerText === '0') {
     if (checkSymbol(value)) {
       display.innerText += value;
@@ -33,7 +33,7 @@ function append(value) {
     }
     return;
   }
-
+  
   if (checkSymbol(value)) {
     if (checkSymbol(lastChar)) { //prevent double symbol
       return;
@@ -45,8 +45,8 @@ function append(value) {
     }
     return;
   }
-
-
+  
+  
   if (display.innerText.length === 8) { //to store numbers larger than 8 digits for later operation
     storedDigits += display.innerText;
     display.innerText = value;
@@ -68,7 +68,7 @@ function backspace() {
   if (!working) return;
   extradigits.style.display = "none";
   resultcontainer.style.display = "none";
-
+  
   if (display.innerText.length === 1) {
     if (storedDigits.length > 0) {
       display.innerText = storedDigits.slice(-8); //bring last 8 storedDigits
@@ -108,18 +108,18 @@ function checkSymbol(char) {
 
 document.addEventListener('keydown', (e) => { //for keyboard
   const key = e.key; 
-
+  
   if (key === 'C' || key ==='c') {
     clearDisplay();
     return;
   }
-
+  
   if (!working) return;
-
+  
   if (!isNaN(key) && key.length === 1) {
     append(key);
   }
-
+  
   else if (key === '+') {
     append('+');
   }
@@ -138,7 +138,7 @@ document.addEventListener('keydown', (e) => { //for keyboard
   else if (key === '.') {
     append('.');
   }
-
+  
   else if (key === '=') {
     calculate();
   }
